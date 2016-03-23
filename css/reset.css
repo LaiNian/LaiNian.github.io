@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-03-12 17:30:46
+ * @version $Id$
+ */
+/*清除默认样式*/
+body,figure,figcaption,h1,h2,h3,h4,h5,h6,hr,p,dl,dt,dd,ul,ol,li,form,input,textarea,th,td{margin:0;padding:0;border:0;line-height:100%}
+body{font:12px/1.5 tahoma,arial,'Microsoft Yahei';color:#444;background:#FFF;overflow:hidden;}
+h2{ font-size:18px;}
+h3{ font-size:16px;}
+li{list-style:none;}
+table{border-collapse:collapse; border-spacing:0;}
+input,select,textarea{ outline:none;border:none; background:none;}
+textarea{resize:none;}
+i,em{ font-style: normal;line-height:100%}
+b,strong{font-weight:normal;line-height:100%}
+input::-ms-clear{display:none;}
+a{color:#393939; text-decoration:none;line-height:100%;}
+img{border:0 none;vertical-align:top;}
+
+/*清除浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.fl{ float:left;}
+.fr{ float:right;}
+.hide{ display:none}
