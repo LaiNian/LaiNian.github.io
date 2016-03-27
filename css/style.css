@@ -126,7 +126,7 @@ figcaption{position:absolute;top:0;left:0;color:#FFF;font-family:"微软雅黑"}
 
 
 /*S Part_five*/
-.part-five{background:url(../huandeng1.jpg) no-repeat;background-size:100% 100%;overflow:hidden;}
+.part-five{background:url(../images/huandeng1.jpg) no-repeat;background-size:100% 100%;overflow:hidden;position:relative;}
 
 .five-left{width:50%;height:550px;overflow:hidden;}
 .five-left-cont{width:100%;height:550px;margin-left:-1000px;text-align:center;}
@@ -138,9 +138,9 @@ figcaption{position:absolute;top:0;left:0;color:#FFF;font-family:"微软雅黑"}
 	transform-style:preserve-3d;
 	-moz-transform-style:preserve-3d;
 	-ms-transform-style:preserve-3d;
-	transform:perspective(800px) rotateX(20deg) rotateY(20deg);
-	-ms-transform:perspective(800px) rotateX(20deg) rotateY(20deg);
-	-moz-transform:perspective(800px) rotateX(20deg) rotateY(20deg);
+	transform:perspective(800px) rotateZ(45deg);
+	-ms-transform:perspective(800px) rotateZ(45deg);
+	-moz-transform:perspective(800px) rotateZ(45deg);
 }
 #div1 div{position:absolute;left:0;top:0;width:198px; height:198px; border:1px solid #000; background:#CCC; line-height:198px; text-align:center;background:rgba(204,204,204,0.3);font-size:14px;color:#333;}
 
@@ -150,4 +150,11 @@ figcaption{position:absolute;top:0;left:0;color:#FFF;font-family:"微软雅黑"}
 #div1 .right{ -webkit-transform:rotateY(90deg) translateZ(100px);-ms-transform:rotateY(90deg) translateZ(100px);-moz-transform:rotateY(90deg) translateZ(100px);}
 #div1 .top{ -webkit-transform:rotateX(90deg) translateZ(100px);-moz-transform:rotateX(90deg) translateZ(100px);-ms-transform:rotateX(90deg) translateZ(100px);}
 #div1 .bottom{ -webkit-transform:rotateX(-90deg) translateZ(100px);-moz-transform:rotateX(-90deg) translateZ(100px);-ms-transform:rotateX(-90deg) translateZ(100px);}
+.fot{position:absolute;bottom:0;}
+
+.fot li{width:100px;height:100px;display:inline-block;float:right;margin-left:50px;border-radius:30px;border:2px solid #999;}
+.fot .chexun a{display:block;width:100%;height:100%;background:url(../%E8%BD%A6%E8%AE%AF%E7%BD%91/images/2.png) no-repeat;}
+.weixin{position:relative;text-align:center;line-height:100px;}
+.weixin img{position:absolute;top:0;left:0;border-radius:30px;height:100px;width:100px;transform:rotateY(-200deg);transition:all 0.5s}
+.weixin:hover img{position:absolute;top:0;left:0;border-radius:30px;transform:rotateY(0deg) scale(2,2)}
 /*E Part_five*/

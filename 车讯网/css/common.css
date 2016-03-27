@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0;}
+a{text-decoration:none;}
+li{list-style:none;}
+
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+textarea{risize:none;}
+input,select,textarea{outline:none;}
+img,input,select,textarea{vertical-align:top;}
+.clearFix:after{content:'';display:block;clear:both;}
+.clearFix{zoom:1;}
+i{font-style:normal}
+.wrapper{width:960px;margin:0 auto;}
+.red{color:#ff0000;}
+
+a{font-size:12px}
+
+.m10{margin-right:10px}

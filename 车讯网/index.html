@@ -1,0 +1,1796 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+<script>
+window.onload=function(){
+	var oCar=document.getElementById('car');
+	var oBtn=oCar.getElementById('btn');
+	var oA=oBtn.getElementsByTagName('a');
+	var oUl=oCar.getElementsByTagName('ul');
+	for(var i=0;i<oA.length;i++){
+		oA[i].aaa=i;
+		oA[i].onmouseover=function(){
+			for(var a=0;a<oA.length;a++){
+				oA[a].className='';
+				oUl[a].className='';
+				}
+			this.className='on';
+			oUl[this.aaa].className='show';	
+			}
+		}
+	}
+</script>
+
+</head>
+
+<body>
+<!--上面-->
+		<div class="header">
+        	<div class="wrapper">
+                <form method="get" action="JavaScript:;">
+                    <span class="s1 fl">通行证号</span>
+                    <input type="text" value="" class="t1 fl" />
+                    <span class="s2 fl">密码</span>
+                    <input type="password" value="" class="t2 fl" />
+                    <input type="submit" value="登陆" class="t3 fl" />
+                </form>
+                <a href="JavaScript:;" class="a1 fl">注册通行证</a>
+                <ul class="fl">
+                	<li><a href="JavaScript:;" class="a2">设为主页</a></li>
+                    <li><a href="JavaScript:;" class="a2">网站导航</a></li>
+                    <li><a href="JavaScript:;" class="a2">广州车展</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top">
+        	<div class="wrapper">
+        		<h1 class="fl">车讯网</h1>
+                <div class="tr">
+                	<iframe src="images/1.jpg" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+        	<div class="wrapper">
+            	<div class="box clearFix">
+                	<div class="nav_list fr">
+                    	<h3 class="fl"><a href="JavaScript:;">互动</a></h3>
+                        <ul class="fl">
+                            	<li><a href="JavaScript:;">车友会活动</a></li>
+                                <li><a href="JavaScript:;">微博</a></li>
+                                <li><a href="JavaScript:;">美图</a></li>
+                                <li><a href="JavaScript:;">自驾游攻略</a></li>
+                                <li><a href="JavaScript:;">论坛</a></li>
+                                <li><a href="JavaScript:;">美女</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_list fr">
+                    	<h3 class="fl"><a href="JavaScript:;">用车</a></h3>
+                        <ul class="fl">
+                            	<li><a href="JavaScript:;">维修养护</a></li>
+                                <li><a href="JavaScript:;">美容装饰</a></li>
+                                <li><a href="JavaScript:;">汽车图片</a></li>
+                                <li><a href="JavaScript:;">汽车常识</a></li>
+                                <li><a href="JavaScript:;">香车GPS</a></li>
+                                <li><a href="JavaScript:;">违章查询</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_list fr">
+                    	<h3 class="fl"><a href="JavaScript:;">购车</a></h3>
+                        <ul class="fl">
+                            	<li><a href="JavaScript:;">汽车报价</a></li>
+                                <li><a href="JavaScript:;">购车参考</a></li>
+                                <li><a href="JavaScript:;">对比评测</a></li>
+                                <li><a href="JavaScript:;">二手车市</a></li>
+                                <li><a href="JavaScript:;">保险贷款</a></li>
+                                <li><a href="JavaScript:;">试乘试驾</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_list fr" style="background:none;">
+                    	<h3 class="fl"><a href="JavaScript:;">资讯</a></h3>
+                        <ul class="fl">
+                            	<li><a href="JavaScript:;">新闻资讯</a></li>
+                                <li><a href="JavaScript:;">行业资讯</a></li>
+                                <li><a href="JavaScript:;">车型对比</a></li>
+                                <li><a href="JavaScript:;">市场动态</a></li>
+                                <li><a href="JavaScript:;">汽车人才</a></li>
+                                <li><a href="JavaScript:;">行车技巧</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="searchfast">
+        	<div class="wrapper">
+                <div class="box">
+                    <form method="get" action="JavaScript:;">
+                        <span class="s1 fl">快速找车：</span>
+                        <input type="text" value="" class="t1 fl" />
+                        <input type="submit" value="搜索" class="t3 fl" />
+                        <select class="t2 fl">
+                        	<option>超级跑车</option>
+                        </select>
+                        <input type="submit" value="搜索" class="t3 fl" />
+                    </form>
+                    <ul class="fr">
+                    	<li class="fl"><a href="JavaScript:;" style="color:JavaScript:;c82a05;">查找车型：</a></li>
+                        <li class="fl"><a href="JavaScript:;">按级别</a></li>
+                        <li class="fl"><a href="JavaScript:;">按品牌</a></li>
+                        <li class="fl"><a href="JavaScript:;">按价格</a></li>
+                        <li class="fl"><a href="JavaScript:;">按字母</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cartype" id="car">
+        	<div class="wrapper">
+                <div class="box clearFix">
+                    <div class="btn" id="btn">
+                    	<span class="fl"><a href="JavaScript:;" class="on">热门车型</a></span>
+                        <span class="fl"><a href="JavaScript:;">5万以下</a></span>
+                        <span class="fl"><a href="JavaScript:;">5-10万</a></span>
+                        <span class="fl"><a href="JavaScript:;">10-15万</a></span>
+                        <span class="fl"><a href="JavaScript:;">15-20万</a></span>
+                        <span class="fl"><a href="JavaScript:;">20-25万</a></span>
+                        <span class="fl"><a href="JavaScript:;">25-30万</a></span>
+                        <span class="fl"><a href="JavaScript:;">30万以上</a></span>
+                    </div>
+                    <ul class="show">
+                    	<li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">奔驰</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                        <li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">奔驰</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                   	</ul>
+                    <ul>
+                    	<li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">宝马</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                        <li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">宝马</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                   	</ul>
+                    <ul>
+                    	<li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">保时捷</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                        <li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">保时捷</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                   	</ul>
+                    <ul>
+                    	<li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">奥迪</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                        <li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">奥迪</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                   	</ul>
+                    <ul>
+                    	<li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">凯迪拉克</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                        <li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">凯迪拉克</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                   	</ul>
+                    <ul>
+                    	<li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">大众</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                        <li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">大众</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                   	</ul>
+                    <ul>
+                    	<li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">路虎</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                        <li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">路虎</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                   	</ul>
+                    <ul>
+                    	<li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">捷豹</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                        <li>
+                        	<p class="p1"><a href="JavaScript:;" class="a3">捷豹</a></p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                            <p class="p2">
+                            	<a href="JavaScript:;" class="a1">凯越</a>
+                                <a href="JavaScript:;" class="a2">报价</a>
+                                <a href="JavaScript:;" class="a2">图片</a>
+                                <a href="JavaScript:;" class="a2">论坛</a>
+                            </p>
+                        </li>
+                   	</ul>
+                </div>
+            </div>
+        </div>
+<!--content-->
+  <section class="content wrapper clearFix">
+  	<div class="cont_left fl">
+    	
+         <div id="roll" class="roll">
+                    <div class="rolltop">
+                        <a href="javascript:;">
+                            <img src="images/rolltop.jpg" width="100%" height="100%" alt="" />
+                        </a>
+                    </div>
+                    <ul class="show">
+                        <li>
+                            <a href="javascript:;">    
+                            <div class="rollbig">
+                                <img src="images/roll2.jpg" width="348" height="216" alt="" />
+                                <div class="rollsmbg"></div>
+                                <div class="rolltext">
+                                    <i>混血王子</i>
+                                    <p>PCauto试驾奔驰威霆</p>
+                                </div>
+                            </div></a>
+                            <div class="rollbm">
+                                <a href="javascript:;">
+                                    <b>混血王子 PCauto试驾奔驰威霆</b>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">    
+                            <div class="rollbig">
+                                <img src="images/roll2.jpg" width="348" height="216" alt="" />
+                                <div class="rollsmbg"></div>
+                                <div class="rolltext">
+                                    <i>震撼将至</i>
+                                    <p>绅宝X65</p>
+                                </div>
+                            </div></a>
+                            <div class="rollbm">
+                                <a href="javascript:;">
+                                    <b>震撼将至 绅宝X65</b>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">    
+                            <div class="rollbig">
+                                <img src="images/roll3.jpg" width="348" height="216" alt="" />
+                                <div class="rollsmbg"></div>
+                                <div class="rolltext">
+                                    <i>王者风范</i>
+                                    <p>路虎揽胜K3</p>
+                                </div>
+                            </div></a>
+                            <div class="rollbm">
+                                <a href="javascript:;">
+                                    <b>王者风范 路虎揽胜K3</b>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">    
+                            <div class="rollbig">
+                                <img src="images/roll4.jpg" width="348" height="216" alt="" />
+                                <div class="rollsmbg"></div>
+                                <div class="rolltext">
+                                    <i>君临天下</i>
+                                    <p>奔驰M980</p>
+                                </div>
+                            </div></a>
+                            <div class="rollbm">
+                                <a href="javascript:;">
+                                <b>君临天下 奔驰M980</b></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">    
+                            <div class="rollbig">
+                                <img src="images/roll5.jpg" width="348" height="216" alt="" />
+                                <div class="rollsmbg"></div>
+                                <div class="rolltext">
+                                    <i>独领风骚</i>
+                                    <p>超凡U880</p>
+                                </div>
+                            </div></a>
+                            <div class="rollbm">
+                                <a href="javascript:;">
+                                    <b>独领风骚 超凡U880</b>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">    
+                            <div class="rollbig">
+                                <img src="images/roll6.jpg" width="348" height="216" alt="" />
+                                <div class="rollsmbg"></div>
+                                <div class="rolltext">
+                                    <i>熊霸天下</i>
+                                    <p>君威S65</p>
+                                </div>
+                            </div></a>
+                            <div class="rollbm">
+                                <a href="javascript:;"><b>熊霸天下 君威S65</b></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">    
+                            <div class="rollbig">
+                                <img src="images/roll7.jpg" width="348" height="216" alt="" />
+                                <div class="rollsmbg"></div>
+                                <div class="rolltext">
+                                    <i>中美混血</i>
+                                    <p>众泰Z300</p>
+                                </div>
+                            </div></a>
+                            <div class="rollbm">
+                                <a href="javascript:;">
+                                    <b>中美混血 众泰Z300</b>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">    
+                            <div class="rollbig">
+                                <img src="images/roll8.jpg" width="348" height="216" alt="" />
+                                <div class="rollsmbg"></div>
+                                <div class="rolltext">
+                                    <i>轻奢时尚</i>
+                                    <p>猎豹CS10</p>
+                                </div>
+                            </div></a>
+                            <div class="rollbm">
+                                <a href="javascript:;">
+                                <b>轻奢时尚 猎豹CS10</b></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="rollbtn" class="rollbtn">
+                        <span class="on">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                    </div>
+                </div>
+        
+    	<div class="cont_left_bot ">
+        	<div class="cont_left_bot_top clearFix">
+            	<span class="fl">汽车视屏</span>
+                <a href="JavaScript:;" class="fr">更多>></a>
+            </div>
+            <div class="cont_left_bot_con">
+            	<ul class="clearFix">
+               		<li class="fl">
+                    	<a href="JavaScript:;">
+                            <img height="82" wdth="105" src="images/pic2.jpg">
+                            <p>奥迪A8L-外观紧凑感强更年轻化</p>
+                        </a>
+                    </li> 
+                    <li class="fl">
+                    	<a href="JavaScript:;">
+                            <img height="82" wdth="105" src="images/pic2.jpg">
+                            <p>奥迪A8L-外观紧凑感强更年轻化</p>
+                        </a>
+                    </li> 
+                    <li class="fl">
+                    	<a href="JavaScript:;">
+                            <img height="82" wdth="105" src="images/pic2.jpg">
+                            <p>奥迪A8L-外观紧凑感强更年轻化</p>
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </div fl>
+    <div class="cont_center fl">
+    	<div class="picone">
+        
+        </div>
+    	<div class="cont_center_one">
+        	<p><a href="JavaScript:;">dog风标志豪华版值得拥有</a></p>
+            <span>金泰评测东风标致508</span>
+            |
+            <span>东店实拍冬粉标致508</span>
+        </div>
+        <div class="cont_center_one">
+        	<p><a href="JavaScript:;">dog风标志豪华版值得拥有</a></p>
+            <span>金泰评测东风标致508</span>
+            |
+            <span>东店实拍冬粉标致508</span>
+        </div>
+        <div class="cont_center_cont">
+        	<ul class="clearFix">
+           		<li class="fl m10">
+                	<a href="JavaScript:;"><img height="85" width="102" src="images/pic5.jpg" alt=""/></a>
+                </li> 
+                <li>
+                	<h3>奥迪Q3概念车</h3>
+                	<p>床前明月光	意识地啊会给你爽</p>
+                    <p>巨头望明月低头思故乡	</p>
+                    <p>落下与孤鹜齐飞秋水共长天。。。	</p>
+                    
+                </li>
+                <li class="cont_center_text">
+                	<p><a href="JavaScript:;">欢迎来到魔兽世界，欢迎来到莫雨时节v</a></p>
+                    <p><a href="JavaScript:;">清明时节与纷纷，路上行人欲断魂</a></p>
+                    <p><a href="JavaScript:;" id="red">明月即使有把酒问天亲听听罚款就会发</a></p>
+                    <p><a href="JavaScript:;">黄发士大夫地方如果如果梵蒂冈山东分公死队风格v</a></p>
+                    <p><a href="JavaScript:;">告诉对方各位如果个人观点是个阿瑟反攻v</a></p>
+                    <p><a href="JavaScript:;" id="red">发射点发生法额我发的说法发射点法v</a></p>
+                    <p><a href="JavaScript:;">发射点发射点发射点发射点发发的发发射点法v</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cont_right fl ">
+    	<div class="cont_right_top fl">
+        	<a href="#"><img height="117" width="225" src="images/pic9.jpg"></a>
+        </div>
+        <div class="cont_right_bot fl">
+            <div class="news_left_hd">
+                <span class="fl">汽车新闻</span>
+                <a href="JavaScript:;" class="fr">更多>></a>
+            </div>
+            <ul>
+           		<li class="clearFix">
+                	<a href="#" calss"fl">武汉</a>
+                    <a href="#" calss"fl">长沙</a>
+                    <a href="#" calss"fl">张家港</a>
+                    <a href="#" calss"fl">m78</a>
+                    <a href="#" calss"fl">幸运</a>
+                </li> 
+                <li class="clearFix">
+                	<a href="#" calss"fl">美国</a>
+                    <a href="#" calss"fl">中国</a>
+                    <a href="#" calss"fl">硬度</a>
+                    <a href="#" calss"fl">印度</a>
+                    <a href="#" calss"fl">拉斯韦</a>
+                </li>
+                <li class="clearFix">
+                	<a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                </li>
+                <li class="clearFix">
+                	<a href="#" calss"fl">奥巴马</a>
+                    <a href="#" calss"fl">大嘴</a>
+                    <a href="#" calss"fl">萝莉</a>
+                    <a href="#" calss"fl">大子</a>
+                    <a href="#" calss"fl">小跑</a>
+                </li>
+                <li class="clearFix">
+                	<a href="#" calss"fl">瑞文</a>
+                    <a href="#" calss"fl">南墙</a>
+                    <a href="#" calss"fl">女枪</a>
+                    <a href="#" calss"fl">女警</a>
+                    <a href="#" calss"fl">女发展</a>
+                </li>
+                <li class="clearFix">
+                	<a href="#" calss"fl">阿迪</a>
+                    <a href="#" calss"fl">耐克</a>
+                    <a href="#" calss"fl">杰斯</a>
+                    <a href="#" calss"fl">税收</a>
+                    <a href="#" calss"fl">文字</a>
+                </li>
+                <li class="clearFix">
+                	<a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                </li>
+                <li class="clearFix">
+                	<a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                </li>
+                <li class="clearFix">
+                	<a href="#" calss"fl">美国</a>
+                    <a href="#" calss"fl">中国</a>
+                    <a href="#" calss"fl">硬度</a>
+                    <a href="#" calss"fl">印度</a>
+                    <a href="#" calss"fl">拉斯韦</a>
+                </li>
+                <li class="clearFix">
+                	<a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                    <a href="#" calss"fl">文字</a>
+                </li>
+                <li class="clearFix">
+                	<a href="#" calss"fl">阿迪</a>
+                    <a href="#" calss"fl">耐克</a>
+                    <a href="#" calss"fl">杰斯</a>
+                    <a href="#" calss"fl">税收</a>
+                    <a href="#" calss"fl">文字</a>
+                </li>
+                
+            </ul>
+       </div>
+    </div>
+  </section>
+<!--forum--> 
+<div class="wrapper clearFix">
+    <div class="forum fl">
+                    <div class="topone clearFix">
+                        <h3 class="fl"><a href="javascript:;">论坛博客</a></h3>
+                        <div class="move fr">
+                            <a href="javascript:;">更多》</a>
+                        </div>                        
+                    </div>
+                    <div class="forumbm">
+                        <div class="forumone clearFix">
+                            <div class="forumsm fl">
+                                <a href="javascript:;"><img src="images/forum1.jpg" width="104" height="79" alt="" /></a> 
+                            </div>
+                            <p class="fl">
+                                <a href="javascript">随着三厢版换代思域在国内消息逐渐明朗，又有国内媒体报道称，两厢思域已确定在广汽本田生产，初定的上市时间为2012年。<i class="red">[详细]</i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="forumone clearFix">
+                            <div class="forumsm fl">
+                                <a href="javascript:;"><img src="images/forum2.jpg" width="104" height="79" alt="" /></a> 
+                            </div>
+                            <p class="fl">
+                                <a href="javascript">2011款大众Jetta TDI从外观看很大程度上继承了北美车展上发布的NCS概念车的大部分特征，设计前卫时尚。<i class="red">[详细]</i>
+                                </a>
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">有奖观世博征网友看馆作业</a>
+                                <a href="javascript:;">旧车换新颜-雅力士装饰征集</a>
+                            </li>
+                            <li>
+                                <a class="red" href="javascript:;">比亚迪全系车型征文赢车模 </a>
+                                <a href="javascript:;">汉兰达品质生活</a>
+                                <a href="javascript:;">征作业送车模</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">美丽大中华网友摄影师招募</a>
+                                <a href="javascript:;">太平洋汽车网有奖活动进行中</a>
+                            </li>
+                        </ul>
+                    </div>
+    </div>
+    <div class="buycar fl">
+                    <div class="topone clearFix">
+                        <div class="w4 fl"></div>
+                        <h3 class="fl"><a href="javascript:;">购车</a></h3>
+                        <div class="move fr">
+                            <a href="javascript:;">全国车市</a>
+                            <i>|</i>
+                            <a href="javascript:;">车型大全</a>
+                            <i>|</i>
+                            <a href="javascript:;">汽车报价</a>
+                        </div>                        
+                    </div>
+                    <ul>
+                        <a  href="javascript:;"><li id="red">窗前明月光疑是地上霜巨头望明月低头思故乡</li></a>
+                        <a href="javascript:;"><li>落霞与鼓舞起飞秋水共长天一色</li></a>
+                        <a href="javascript:;"><li>明月即使有把酒问清听</li></a>
+                        <a href="javascript:;"><li>世上只有妈妈好友好的孩纸想快报</li></a>
+                        <a href="javascript:;"><li>窗前民月光萨克饭后立刻就赶紧看哈健康</li></a>
+                        <a href="javascript:;"><li>士大夫很舒服很舒服和风格还是推</li></a>
+                        <a href="javascript:;"><li>啊当法官半年没见官方vhytd </li></a>
+                        <a class="red" href="javascript:;"><li>啦开发哈看手机话费大奖啊师范生的奶粉</li></a>
+                        <a href="javascript:;"><li>山东宏发klan传给谁看西餐热可能期中考</li></a>
+                        <a href="javascript:;"><li>了开发客户的手工帆布女鞋尺码呢发动机而</li></a>
+                        <a href="javascript:;"><li>阿斯，地方吧级别的父母你先吃吧vnmbnmb</li></a>
+                        <a href="javascript:;"><li>7发开始放假咯好速度飞快的红利群</li></a>
+                    </ul>    
+                
+                </div>
+	<div class="forum_right fr">
+    	<div class="news_left_hd">
+            <span class="fl">汽车新闻</span>
+            <a href="JavaScript:;" class="fr">更多>></a>
+        </div>
+        <div class="forum_con">
+        	<ul>
+            	<li class="clearFix">
+                	<a href="#" class="fl"><img height="60" width="80" src="images/forum1.jpg"></a>
+                    <div class="fl">
+                    	<h3>2011款是假</h3>
+                    	<p>文字文字</p>
+                        <a href="#">评到>></a><a href="#">论坛>></a>
+                    </div>
+                </li>
+                <li class="clearFix">
+                	<a href="#" class="fl"><img height="60" width="80" src="images/forum1.jpg"></a>
+                    <div class="fl">
+                    	<h3>2011款是假</h3>
+                    	<p>文字文字</p>
+                        <a href="#">评到>></a><a href="#">论坛>></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="forum_text">
+        	<ul>
+            	<li>
+                	<a href="#">床前明月光意识嗲花姑娘傻瓜</a>
+                </li>
+                <li>
+                	<a href="#">床前明月光意识嗲花姑娘傻瓜</a>
+                </li>
+                <li>
+                	<a href="#">床前明月光意识嗲花姑娘傻瓜</a>
+                </li>
+                <li>
+                	<a href="#">床前明月光意识嗲花姑娘傻瓜</a>
+                </li>
+                <li>
+                	<a href="#">床前明月光意识嗲花姑娘傻瓜</a>
+                </li>
+            </ul>
+        </div>
+    </div>                
+</div>
+<!--other-->
+<section class="other wrapper">
+	<a href="JavaScript:;">
+    	<img src="images/adver.jpg" alt=""/>
+    </a>
+</section>
+<!--test-->
+<div class="test wrapper">
+	<div class="test_nav clearFix">
+    	<h2 class="fl">试驾评测</h2>
+        <ul class="fr">
+        	<li class="fl"><a href="JavaScript:;">对比评价</a> | 
+            </li>
+            <li class="fl"><a href="JavaScript:;">对评测</a> | </li>
+            <li class="fl"><a href="JavaScript:;">视屏评测</a> | </li>
+            <li class="fl"><a href="JavaScript:;">国内试驾</a> | </li>
+            <li class="fl"><a href="JavaScript:;">国外试驾</a> | </li>
+            <li class="fl"><a href="JavaScript:;">对比试驾</a> | </li>
+            <li class="fl"><a href="JavaScript:;">经销商</a> | </li>
+            <li class="fl"><a href="JavaScript:;">团购</a> | </li>
+            <li class="fl"><a href="JavaScript:;">销量</a> | </li>
+            <li class="fl"><a href="JavaScript:;">保险</a> | </li>
+            <li class="fl"><a href="JavaScript:;">车贷</a></li>
+        </ul>
+    </div>
+    <div class="test-driver clearFix">    
+            <div class="test-driver-lt fl">
+                <div class="expects"><a href="javascript:;">
+                    <div class="expectsbig">
+                        <img src="images/forum2.jpg" width="100%" height="194" alt="" />
+                        <div class="expectsbg">                            
+                        </div>
+                        <b>值得期待</b>
+                        <i>中华H530上市前实拍</i>
+                    </div>
+                    <p>值得期待 中华H530上市前抢先实拍</p></a> 
+                </div>
+                                                <!--多车对比-->
+                <div class="design-car">
+                    <div class="topone clearFix">
+                        <h3 class="fl"><a href="javascript:;">多车对比</a></h3>
+                        <div class="move fr">
+                            <a href="javascript:;">更多>></a>
+                        </div>                        
+                    </div>  
+                    <ul>
+                        <li class="clearFix">
+                            <a class="fl" href="javascript:;">家用兼商务谁更称职 新迈腾VS新君越</a>
+                            <i class="fr">08月21日</i>
+                        </li>
+                        <li class="clearFix">
+                            <a class="fl" href="javascript:;">三厢更实用 爱唯欧/瑞纳对比 配置篇</a>
+                            <i class="fr">08月17日</i>
+                        </li>
+                        <li class="clearFix">
+                            <a class="fl" href="javascript:;">七夕为爱筑巢 4款“情侣小车”浪漫推荐</a>
+                            <i class="fr">08月16日</i>
+                        </li>
+                        <li class="clearFix">
+                            <a class="fl" href="javascript:;">差别只在造型设计现代瑞纳对比起亚K2</a>
+                            <i class="fr">08月11日</i>
+                        </li>
+                        <li class="clearFix">
+                            <a class="fl" href="javascript:;">家用兼商务谁更称职 新迈腾VS新君越</a>
+                            <i class="fr">08月10日</i>
+                        </li>
+                        <li class="clearFix">
+                            <a href="javascript:;">7万元入门家轿比较新爱丽舍PK腾翼C30</a>
+                            <i class="fr">08月10日</i>
+                        </li>
+                    </ul>
+                </div>                                
+            </div>
+            <div class="test-driver-ct fl">
+                <div class="preliminary">
+                    <div class="topone clearFix">
+                        <div class="w4 fl"></div>
+                        <h3 class="fl"><a href="javascript:;">初步海选</a></h3>
+                        <div class="move fr">
+                            <a href="javascript:;">更多>></a>
+                        </div>                        
+                    </div>
+                    <ul>
+                        <li class="on"><a href="javascript:;">安全与便捷 2011款迈腾最高优惠10000元</a></li>
+                        <li><a href="javascript:;">一汽奔腾“我五岁了”低价团购五日五夜，购车</a></li>
+                        <li><a href="javascript:;">一汽奔腾B50优惠现金1.8万元 广州有现车供应</a></li>
+                        <li><a href="javascript:;">原装进口丰田双门轿跑车 杰路驰现金优惠3万元</a></li>
+                        <li><a href="javascript:;">广博有龙“五零”信贷，爱车轻松“贷”回家</a></li>
+                        <li class="on"><a href="javascript:;">硬派越野车 北汽勇士带您享受军旅生活</a></li>
+                        <li><a href="javascript:;">打造自主品牌赛道最强车 福美来三代运动基因</a></li>
+                        <li><a href="javascript:;">复兴之作 2011款捷豹XJ优惠高达39.8万</a></li>
+                    </ul>
+                </div>
+                <div class="depth">
+                    <div class="topone clearFix">
+                        <div class="w4 fl"></div>
+                        <h3 class="fl"><a href="javascript:;">深度体验</a></h3>
+                        <div class="move fr">
+                            <a href="javascript:;">更多>></a>
+                        </div>                        
+                    </div>
+                    <ul>
+                        <li><a href="javascript:;">MINI Countryman/宝马X1/劲炫 试荣威首款SUV W5</a></li>
+                        <li><a href="javascript:;">凯迪拉克发布CIEL概念车型罕见的大巴车安全性能</a></li>
+                        <li class="on"><a href="javascript:;">第一辆车之选 4款不同个性A0级车型推荐</a></li>
+                        <li><a href="javascript:;">新迈腾2.0T尊贵型购车经历阳光1.5MT装高音喇叭</a></li>
+                        <li><a href="javascript:;">三菱翼神全系车型保养详解福克斯0利率贷款手续</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="test-driver-rt fr">
+                <div class="topone clearFix">
+                    <div class="w4 fl"></div>
+                    <h3 class="fl"><a href="javascript:;">热门排行</a></h3>
+                    <div class="move fr">
+                        <a href="javascript:;">更多>></a>
+                    </div>                        
+                </div>
+                <div id="niu" class="niu">
+                    <ul>
+                        <li>
+                            <p class="on"><b>1</b><a href="javascirpt:;">25万内欧美日韩SUV导购</a></p>
+                            <span class="show">
+                                <div class="bigbig clearFix">
+                                    <div class="smbig fl">
+                                        <a href="javascript:;"><img src="images/roll2.jpg" width="80" height="60" alt=""/></a>
+                                    </div>
+                                    <div class="bigrt fl">
+                                        <a href="javascript:;">由于剧本了霸气的外观造型、宽敞的车...<i class="red">详细</i></a>
+                                    </div>
+                                </div>
+                            </span>
+                        </li>
+                        <li>
+                            <p><b>2</b><a href="javascirpt:;">四款自主紧凑型车推荐</a></p>
+                            <span>
+                                <div class="bigbig clearFix">
+                                    
+                                    <div class="bigrt fl">
+                                        <a href="javascript:;">由于剧本了霸气的外观造型、宽敞的车...<i class="red">详细</i></a>
+                                    </div>
+                                </div>
+                            </span>
+                        </li>
+                        <li>
+                            <p><b>3</b><a href="javascirpt:;">实拍2011款雷诺啦古娜</a></p>
+                            <span>
+                                <div class="bigbig clearFix">
+                                    
+                                    <div class="bigrt fl">
+                                        <a href="javascript:;">由于剧本了霸气的外观造型、宽敞的车...<i class="red">详细</i></a>
+                                    </div>
+                                </div>
+                            </span>
+                        </li>
+                        <li>
+                            <p><b>4</b><a href="javascirpt:;">25万内欧美日韩SUV导购</a></p>
+                            <span>
+                                <div class="bigbig clearFix">
+                                    
+                                    <div class="bigrt fl">
+                                        <a href="javascript:;">由于剧本了霸气的外观造型、宽敞的车...<i class="red">详细</i></a>
+                                    </div>
+                                </div>
+                            </span>
+                        </li>
+                        <li>
+                            <p><b>1</b><a href="javascirpt:;">25万内欧美日韩SUV导购</a></p>
+                            <span>
+                                <div class="bigbig clearFix">
+                                   
+                                    <div class="bigrt fl">
+                                        <a href="javascript:;">由于剧本了霸气的外观造型、宽敞的车...<i class="red">详细</i></a>
+                                    </div>
+                                </div>
+                            </span>
+                        </li>
+                        <li>
+                            <p><b>1</b><a href="javascirpt:;">25万内欧美日韩SUV导购</a></p>
+                            <span>
+                                <div class="bigbig clearFix">
+                                    
+                                    <div class="bigrt fl">
+                                        <a href="javascript:;">由于剧本了霸气的外观造型、宽敞的车...<i class="red">详细</i></a>
+                                    </div>
+                                </div>
+                            </span>
+                        </li>
+                        <li>
+                            <p><b>1</b><a href="javascirpt:;">25万内欧美日韩SUV导购</a></p>
+                            <span>
+                                <div class="bigbig clearFix">
+                                   
+                                    <div class="bigrt fl">
+                                        <a href="javascript:;">由于剧本了霸气的外观造型、宽敞的车...<i class="red">详细</i></a>
+                                    </div>
+                                </div>
+                            </span>
+                        </li>
+                        <li>
+                            <p><b>1</b><a href="javascirpt:;">25万内欧美日韩SUV导购</a></p>
+                            <span>
+                                <div class="bigbig clearFix">
+                                   
+                                    <div class="bigrt fl">
+                                        <a href="javascript:;">由于剧本了霸气的外观造型、宽敞的车...<i class="red">详细</i></a>
+                                    </div>
+                                </div>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </div>
+    
+    
+    
+    
+    
+</div>
+<!--othertwo-->
+<section class="other wrapper">
+	<a href="JavaScript:;">
+    	<img src="images/adver.jpg" alt=""/>
+    </a>
+</section>
+<!--choice-->
+<section class="choice wrapper">
+	<div class="test_nav clearFix">
+        <h2 class="fl">选车导购</h2>
+        <ul class="fr">
+            <li class="fl"><a href="JavaScript:;">对比评价</a> | 
+            </li>
+            <li class="fl"><a href="JavaScript:;">对评测</a> | </li>
+            <li class="fl"><a href="JavaScript:;">视屏评测</a> | </li>
+            <li class="fl"><a href="JavaScript:;">国内试驾</a> | </li>
+            <li class="fl"><a href="JavaScript:;">国外试驾</a> | </li>
+            <li class="fl"><a href="JavaScript:;">对比试驾</a> | </li>
+            <li class="fl"><a href="JavaScript:;">经销商</a> | </li>
+            <li class="fl"><a href="JavaScript:;">团购</a> | </li>
+            <li class="fl"><a href="JavaScript:;">销量</a> | </li>
+            <li class="fl"><a href="JavaScript:;">保险</a> | </li>
+            <li class="fl"><a href="JavaScript:;">车贷</a></li>
+        </ul>
+    </div>
+    <div class="hot">
+        <div class="hot_nav clearFix">
+        	<h4 class="fl">热门车型推荐</h4>
+        	<ul class="fl price">
+            	<li class="fl"><a href="JavaScript:;">5万以下</a></li>
+                <li class="fl"><a href="JavaScript:;">10万以下</a></li>
+                <li class="fl"><a href="JavaScript:;">10-15万以</a>下</li>
+                <li class="fl"><a href="JavaScript:;">15-20万以下</a></li>
+                <li class="fl"><a href="JavaScript:;">20-25万以下</a></li>
+                <li class="fl"><a href="JavaScript:;">25-30万以下</a></li>
+                <li class="fl"><a href="JavaScript:;">Suv车型</a></li>
+                <li class="fl"><a href="JavaScript:;">69万以下</a></li>
+                <li class="fl"><a href="JavaScript:;">579万以下</a></li>
+            </ul>
+        </div>
+        <ul class="mode" class="clearFix">
+        	<li class="fl">
+            	<a href="JavaScript:;" class="fl mode_pic">
+                	<img height="103" width="110"src="images/pic6.jpg">
+                	<span>德玛西亚</span>
+               	</a>
+                <div class="fl">
+                	<p><a href="JavaScript:;">车型评到>></a></p>
+                    <p><a href="JavaScript:;">车型评到>></a></p>
+                    <p><a href="JavaScript:;">车型评到>></a></p>
+                    <p><a href="JavaScript:;">车型评到>></a></p>
+                </div>
+            </li>
+            <li class="fl">
+            	<a href="JavaScript:;" class="fl mode_pic">
+                	<img height="103" width="110"src="images/pic6.jpg">
+                	<span>德玛西亚</span>
+               	</a>
+                <div class="fl">
+                	<p><a href="JavaScript:;">车型评到>></a></p>
+                    <p><a href="JavaScript:;">车型评到>></a></p>
+                    <p><a href="JavaScript:;">车型评到>></a></p>
+                    <p><a href="JavaScript:;">车型评到>></a></p>
+                </div>
+            </li>
+            <li class="fl">
+            	<a href="JavaScript:;" class="fl mode_pic">
+                	<img height="103" width="110"src="images/pic6.jpg">
+                	<span>德玛西亚</span>
+               	</a>
+                <div class="fl">
+                	<p><a href="JavaScript:;">车型评到>></a></p>
+                    <p><a href="JavaScript:;">车型评到>></a></p>
+                    <p><a href="JavaScript:;">车型评到>></a></p>
+                    <p><a href="JavaScript:;">车型评到>></a></p>
+                </div>
+            </li>
+            <li class="fl">
+            	<a href="JavaScript:;" class="fl mode_pic">
+                	<img height="103" width="110"src="images/pic6.jpg">
+                	<span>德玛西亚</span>
+               	</a>
+                <div class="fl">
+                	<p><a href="JavaScript:;">车型评到>></a></p>
+                    <p><a href="JavaScript:;">车型评到>></a></p>
+                    <p><a href="JavaScript:;">车型评到>></a></p>
+                    <p><a href="JavaScript:;">车型评到>></a></p>
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+        <div class="news clearFix">
+            <div class="news_left fl">
+            	<div class="news_left_hd">
+                	<span class="fl">汽车新闻</span>
+                    <a href="JavaScript:;" class="fr">更多>></a>
+                </div>
+                <ul class="news_text">
+                	<li><a href="JavaScript:;">文字:文字文字文字文德玛西亚  操字文字</a></li>
+                    <li><a href="JavaScript:;">文字文字文字文字文字文字邱额谁共长天一色</a></li>
+                    <li><a href="JavaScript:;">文字:文字文字文字文字文字</a></li>
+                    <li><a href="JavaScript:;">文字文字文字文字落下与鼓舞起飞文字文字</a></li>
+                    <li><a href="JavaScript:;">文字:文字文字文字文字文字</a></li>
+                    <li><a href="JavaScript:;">文字文字文字|文字文字文字</a></li>
+                    <li><a href="JavaScript:;">文字文字文字文字文字文字</a></li>
+                    <li><a href="JavaScript:;">文字文字:长钱明月光文字文字文字文字</a></li>
+                    <li><a href="JavaScript:;">我在我在地方开始开始文字文字文字文字文字文字</a></li>
+                    
+                </ul>
+            </div>
+            <div class="news_center fl">
+            	<div class="news_left_hd">
+                	<span class="fl">汽车新闻</span>
+                    <a href="JavaScript:;" class="fr">更多>></a>
+                </div>
+                <ul class="news_text">
+                	<li><a href="JavaScript:;">文字:文字文字文字文德玛西亚  操字文字</a></li>
+                    <li><a href="JavaScript:;">文字文字文字文字文字文字邱额谁共长天一色</a></li>
+                    <li><a href="JavaScript:;">文字:文字文字文字文字文字</a></li>
+                    <li><a href="JavaScript:;">文字文字文字文字落下与鼓舞起飞文字文字</a></li>
+                    <li><a href="JavaScript:;">文字:文字文字文字文字文字</a></li>
+                    <li><a href="JavaScript:;">文字文字文字|文字文字文字</a></li>
+                    <li><a href="JavaScript:;">文字文字文字文字文字文字</a></li>
+                    <li><a href="JavaScript:;">文字文字:长钱明月光文字文字文字文字</a></li>
+                    <li><a href="JavaScript:;">我在我在地方开始开始文字文字文字文字文字文字</a></li>
+                    
+                </ul>
+            </div>
+            <div class="news_right fl">
+            	<div class="news_right_hd">
+                	<span class="fl">汽车新闻</span>
+                    <a href="JavaScript:;" class="fr">更多>></a>
+                </div>
+                <div class="map">
+                	<a href="JavaScript:;"><img height="231" width="228" src="images/pic8.jpg" alt=""/></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--friend-->
+<div class="friendlink wrapper">
+			<h3><a href="javascript:;">友情链接</a></h3>
+			<ul>
+				<li>
+					<a href="javascript:;">新浪汽车</a>
+					<a href="javascript:;">网易汽车</a>
+					<a class="red" href="javascript:;">腾讯汽车</a>
+					<a href="javascript:;">猫扑汽车</a>
+					<a href="javascript:;">凤凰网汽车</a>
+					<a href="javascript:;">汽车之家</a>
+					<a class="red" href="javascript:;">CNTV汽车台</a>
+					<a href="javascript:;">爱卡汽车</a>
+					<a href="javascript:;">我想去导航</a>
+					<a href="javascript:;">卓众汽车网</a>
+					<a href="javascript:;">21cn汽车</a>
+					<a href="javascript:;">中国二手车城</a>
+					<a class="red" href="javascript:;">腾讯汽车</a>
+					<a href="javascript:;">猫扑汽车</a>
+					<a href="javascript:;">凤凰网汽车</a>
+					<a href="javascript:;">21cn汽车</a>
+					<a class="red" href="javascript:;">CNTV汽车台</a>
+					<a href="javascript:;">中国二手车城</a>
+					<a href="javascript:;">猫扑汽车</a>
+					<a href="javascript:;">凤凰网汽车</a>
+					<a href="javascript:;">汽车之家</a>
+					<a href="javascript:;">汽车中国</a>
+					<a href="javascript:;">卓众汽车网</a>
+					<a href="javascript:;">21cn汽车</a>
+					<a class="red" href="javascript:;">CNTV汽车台</a>
+					<a href="javascript:;">中国二手车城</a>
+					<a href="javascript:;">猫扑汽车</a>
+					<a href="javascript:;">凤凰网汽车</a>
+					<a href="javascript:;">汽车之家</a>
+					<a href="javascript:;">汽车中国</a>
+					<a href="javascript:;">爱卡汽车</a>
+					<a href="javascript:;">我想去导航</a>
+					<a href="javascript:;">21cn汽车</a>
+					<a href="javascript:;">猫扑汽车</a>
+					<a href="javascript:;">新浪汽车</a>
+					<a href="javascript:;">卓众汽车网</a>
+				</li>
+			</ul>
+		</div>
+
+</section>
+
+<div class="footer">
+	<div class="footertop">
+			<i>车讯网:</i>
+			<a href="javascript:;">关于我们</a>
+			<a href="javascript:;">招贤纳士</a>
+			<a href="javascript:;">友情链接</a>
+			<a href="javascript:;">意见反馈</a>
+			<a href="javascript:;">车商道</a>
+			<a href="javascript:;">新闻归档</a>
+	</div>
+    <div class="footerbm clearFix">
+        <div class="footerlt fl">
+            <a href="javascript:;">
+                <img src="images/footerbm2.png" width="100%" height="100%"  alt=""/>
+            </a>
+        </div>
+        <div class="footerct fl">
+            <p>
+                <a href="javascript:;">查汽车报价，</a>
+                <a href="javascript:;">赏汽车图片，</a>
+                <a href="javascript:;">看汽车视频，</a>
+                <a href="javascript:;">泡汽车论坛，</a>
+                <a href="javascript:;">参加汽车团购，</a>
+                <a href="javascript:;">就来车讯网！</a>
+            </p>
+            <p>Copyright © 2008-2011 版权所有 车讯网 <a href="javascript:;">京ICP备080418号</a> 北京市朝阳分局网安备案编号：110105005131</p>
+        </div>
+        <div class="footerrt fl">
+            <a href="javascript:;"><img src="" width="100%" height="100%"  alt=""/></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</body>
+</html>
