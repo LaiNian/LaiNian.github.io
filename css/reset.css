@@ -6,6 +6,7 @@
  * @version $Id$
  */
 /*清除默认样式*/
+body{-webkit--font-smoothing:antialiased;/*字体抗锯齿*/}
 body,figure,figcaption,h1,h2,h3,h4,h5,h6,hr,p,dl,dt,dd,ul,ol,li,form,input,textarea,th,td{margin:0;padding:0;border:0;line-height:100%}
 body{font:12px/1.5 tahoma,arial,'Microsoft Yahei';color:#444;background:#FFF;overflow:hidden;}
 h2{ font-size:18px;}
@@ -17,7 +18,7 @@ textarea{resize:none;}
 i,em{ font-style: normal;line-height:100%}
 b,strong{font-weight:normal;line-height:100%}
 input::-ms-clear{display:none;}
-a{color:#393939; text-decoration:none;line-height:100%;}
+a{color:#393939; text-decoration:none;line-height:100%;display:inline-blcok;}
 img{border:0 none;vertical-align:top;}
 
 /*清除浮动*/
